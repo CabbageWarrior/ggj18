@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 114216494983630280}
   - component: {fileID: 114694866082049052}
   - component: {fileID: 114569859883794488}
+  - component: {fileID: 58778765249321194}
   m_Layer: 0
   m_Name: AgentBusinessMan
   m_TagString: Untagged
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1709466584997610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 4.23, y: -1.2199999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4850311932138786}
@@ -75,6 +76,21 @@ Transform:
   m_Father: {fileID: 4813981367896498}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &58778765249321194
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1709466584997610}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.16037439
 --- !u!95 &95180518918844716
 Animator:
   serializedVersion: 3
@@ -103,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3916d9c42ba90479ee150cf1b1fff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 1
+  weight: 0.16
   radius: 0.2
 --- !u!114 &114420595399477646
 MonoBehaviour:
@@ -142,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 922d2937029396146956b435776bff4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 0
+  weight: 0.88
   targetTransform: {fileID: 0}
 --- !u!114 &114851709616908604
 MonoBehaviour:
@@ -155,11 +171,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee25b66a06c0994897e1c408379db94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumLinearVelocity: 0.5
-  maximumAngularVelocity: 20
+  maximumLinearVelocity: 0.8
+  maximumAngularVelocity: 1000
   maximumLinearAcceleration: 1
   maximumLinearDeceleration: 1
-  maximumAngularAcceleration: 90
+  maximumAngularAcceleration: 1000
   pippottino: {fileID: 1082220872013522}
 --- !u!212 &212121064491770178
 SpriteRenderer:

@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 114058809185008490}
   - component: {fileID: 114443928847471048}
   - component: {fileID: 114497457778343606}
+  - component: {fileID: 58729257015063480}
+  - component: {fileID: 50115353548420458}
   m_Layer: 0
   m_Name: AgentVecchietta
   m_TagString: Untagged
@@ -54,7 +56,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1756052672595924}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0.24434528, w: -0.9696883}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -68,13 +70,48 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1704994764319784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 4.6, y: -1.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4093504128748324}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50115353548420458
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1704994764319784}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!58 &58729257015063480
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1704994764319784}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.16037439
 --- !u!95 &95475436951630836
 Animator:
   serializedVersion: 3
@@ -103,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3916d9c42ba90479ee150cf1b1fff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 1
+  weight: 0.16
   radius: 0.2
 --- !u!114 &114354375623621846
 MonoBehaviour:
@@ -116,11 +153,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee25b66a06c0994897e1c408379db94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumLinearVelocity: 0.5
-  maximumAngularVelocity: 20
+  maximumLinearVelocity: 0.1
+  maximumAngularVelocity: 1000
   maximumLinearAcceleration: 1
   maximumLinearDeceleration: 1
-  maximumAngularAcceleration: 90
+  maximumAngularAcceleration: 1000
   pippottino: {fileID: 1756052672595924}
 --- !u!114 &114443928847471048
 MonoBehaviour:
@@ -133,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 922d2937029396146956b435776bff4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 0
+  weight: 0.8
   targetTransform: {fileID: 0}
 --- !u!114 &114497457778343606
 MonoBehaviour:
@@ -195,7 +232,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 098d4abfe03342b4c95703475ea04c70, type: 3}
+  m_Sprite: {fileID: 21300010, guid: 098d4abfe03342b4c95703475ea04c70, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

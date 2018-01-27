@@ -27,15 +27,23 @@ namespace AI.Movement
         private float linearAcceleration;
         private float angularAcceleration;
 
+        private SeekBehaviour seek;
         private SteeringBehaviour[] steeringBehaviours;
 
         void Start()
         {
             steeringBehaviours = GetComponents<SteeringBehaviour>();
+            seek = GetComponent<SeekBehaviour>();
+            pippottinoRenderer = pippottino.GetComponent<SpriteRenderer>();
+            ChangeDirection();
+
         }
 
         void Update()
         {
+
+            pippottinoRenderer.sortingOrder = (int)((pippottino.transform.position.y* - 1 * 100 ) + 1000);
+
             // Get the steering output
             Vector2 totalSteering = Vector2.zero;
             float totalWeight = 0;
@@ -96,6 +104,24 @@ namespace AI.Movement
         {
             if (pippottino)
                 pippottino.transform.rotation = Quaternion.identity;
+        }
+
+        SpriteRenderer pippottinoRenderer;
+
+        public void ChangeDirection()
+        {
+
+
+            if (seek.targetTransform.position.x > transform.position.x)
+            {
+                pippottinoRenderer.flipX = true;
+                transform.rotation = Quaternion.identity;
+            }
+            else
+            {
+                pippottinoRenderer.flipX = false;
+                transform.rotation = new Quaternion(0, 0, 0.5f, 0);
+            }
         }
     }
 }

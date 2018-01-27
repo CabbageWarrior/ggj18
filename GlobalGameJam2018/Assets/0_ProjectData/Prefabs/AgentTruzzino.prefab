@@ -41,6 +41,8 @@ GameObject:
   - component: {fileID: 114990540939519850}
   - component: {fileID: 114491016053382484}
   - component: {fileID: 114170708918130336}
+  - component: {fileID: 58932584856502180}
+  - component: {fileID: 50942088202367478}
   m_Layer: 0
   m_Name: AgentTruzzino
   m_TagString: Untagged
@@ -55,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1770086756439718}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 4.01, y: -1.0699998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4354181653980938}
@@ -75,6 +77,41 @@ Transform:
   m_Father: {fileID: 4174858941322226}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50942088202367478
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1770086756439718}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!58 &58932584856502180
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1770086756439718}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.16037439
 --- !u!95 &95442240775558088
 Animator:
   serializedVersion: 3
@@ -117,10 +154,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maximumLinearVelocity: 0.5
-  maximumAngularVelocity: 20
+  maximumAngularVelocity: 1000
   maximumLinearAcceleration: 1
   maximumLinearDeceleration: 1
-  maximumAngularAcceleration: 90
+  maximumAngularAcceleration: 1000
   pippottino: {fileID: 1172791088175506}
 --- !u!114 &114491016053382484
 MonoBehaviour:
@@ -133,7 +170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 922d2937029396146956b435776bff4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 0
+  weight: 0.83
   targetTransform: {fileID: 0}
 --- !u!114 &114800616523495148
 MonoBehaviour:
@@ -159,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3916d9c42ba90479ee150cf1b1fff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 1
+  weight: 0.16
   radius: 0.2
 --- !u!212 &212658790755961118
 SpriteRenderer:

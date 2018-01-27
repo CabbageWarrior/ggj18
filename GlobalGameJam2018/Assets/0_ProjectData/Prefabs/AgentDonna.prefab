@@ -24,6 +24,9 @@ GameObject:
   - component: {fileID: 114030073503423990}
   - component: {fileID: 114131471087805280}
   - component: {fileID: 114299484665640172}
+  - component: {fileID: 114674405901582072}
+  - component: {fileID: 58877317651016868}
+  - component: {fileID: 50362153895230508}
   m_Layer: 0
   m_Name: AgentDonna
   m_TagString: Untagged
@@ -55,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1161184362531184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 0, z: 0}
+  m_LocalPosition: {x: 3.81, y: -1.2299999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4697788317751760}
@@ -75,6 +78,41 @@ Transform:
   m_Father: {fileID: 4584142651759720}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50362153895230508
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1161184362531184}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!58 &58877317651016868
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1161184362531184}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.16037439
 --- !u!95 &95450297184537610
 Animator:
   serializedVersion: 3
@@ -103,7 +141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3916d9c42ba90479ee150cf1b1fff1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 1
+  weight: 0.16
   radius: 0.2
 --- !u!114 &114131471087805280
 MonoBehaviour:
@@ -116,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 922d2937029396146956b435776bff4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weight: 0
+  weight: 0.82
   targetTransform: {fileID: 0}
 --- !u!114 &114149844747919536
 MonoBehaviour:
@@ -144,6 +182,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   radius: 3
+--- !u!114 &114674405901582072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1161184362531184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 082561a202c047d42b9ee20dc095c94c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weight: 1
+  targetTransform: {fileID: 0}
 --- !u!114 &114692452272467510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,11 +206,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee25b66a06c0994897e1c408379db94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maximumLinearVelocity: 0.5
-  maximumAngularVelocity: 20
+  maximumLinearVelocity: 0.6
+  maximumAngularVelocity: 1000
   maximumLinearAcceleration: 1
   maximumLinearDeceleration: 1
-  maximumAngularAcceleration: 90
+  maximumAngularAcceleration: 1000
   pippottino: {fileID: 1325902506377660}
 --- !u!212 &212852513744234500
 SpriteRenderer:
