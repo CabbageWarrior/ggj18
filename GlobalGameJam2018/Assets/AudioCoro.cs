@@ -17,6 +17,14 @@ public class AudioCoro : MonoBehaviour
 
     private bool correctButtonPressed;
 
+    private Animator anim;
+    private Coroutine audioSbagliatoCoroutine;
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -50,8 +58,14 @@ public class AudioCoro : MonoBehaviour
             if (audioSbagliato.isPlaying)
             {
                 audioSbagliato.Stop();
+                if (audioSbagliatoCoroutine != null)
+                {
+                    StopCoroutine(audioSbagliatoCoroutine);
+                }
             }
 
+            anim.SetBool("Lettera", true);
+            anim.SetBool("Sbaglio", false);
             audioGiusto.Play();
         }
     }
@@ -60,18 +74,32 @@ public class AudioCoro : MonoBehaviour
     {
         if (audioGiusto.isPlaying)
         {
+            anim.SetBool("Lettera", false);
+            anim.SetBool("Sbaglio", false);
             audioGiusto.Stop();
         }
     }
 
     private void StartSfigatedAudio()
     {
-        if (true)// (!audioSbagliato.isPlaying)
-        {
-            StopCorrectAudio();
+        StopCorrectAudio();
 
-            audioSbagliato.clip = audioClips[UnityEngine.Random.Range(0, audioClips.Length)];
-            audioSbagliato.Play();
+        audioSbagliato.clip = audioClips[UnityEngine.Random.Range(0, audioClips.Length)];
+        anim.SetBool("Lettera", true);
+        anim.SetBool("Sbaglio", true);
+        audioSbagliato.Play();
+
+        audioSbagliatoCoroutine = StartCoroutine(ResetAudioSbagliatoAnimation());
+    }
+
+    private IEnumerator ResetAudioSbagliatoAnimation()
+    {
+        while (audioSbagliato.isPlaying)
+        {
+            yield return null;
         }
+
+        anim.SetBool("Lettera", false);
+        anim.SetBool("Sbaglio", false);
     }
 }
