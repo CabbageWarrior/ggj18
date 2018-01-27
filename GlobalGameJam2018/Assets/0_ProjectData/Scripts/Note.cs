@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Note : MonoBehaviour {
 Transform nota_transform;
+public bool pressing;
 Transform timer_transform;
 float opacità_nota = 1f;
  float velocitaScomparitoria= 0.01f;
@@ -11,57 +12,59 @@ public GameObject input_timer;
 SpriteRenderer sprite_nota;
 SpriteRenderer sprite_timer;
 GameObject timer;
+public GameObject tokillachild;
+Animator animation_reference;
+string lettera;
 float x = 1f;
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-List<string> lettere = new List<string>(5);
-public int minDelay;
-public int maxDelay;
- Random random = new Random();
 
- char lettera;
+
+ 
+
+
+ TextMesh text;
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	void Start () {
 	
-    sprite_nota=gameObject.GetComponent<SpriteRenderer>();
+    pressing=false;
 	//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-		lettere.Add("QWASZ");
-		lettere.Add("ERDXC");
-		lettere.Add("TYFGV");
-		lettere.Add("UHJBN");
-		lettere.Add("IOPKLM");
-
+	lettera=gameObject.GetComponentInChildren<TextMesh>().text;
+	animation_reference=GetComponent<Animator>();
+	;
+		Debug.Log(lettera);
 	}
 	
 	void Update () {
+		
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-		if (!Input.GetKey("space")){
+	
+		if (!Input.GetKey(lettera.ToLower())){
+		sprite_nota=gameObject.GetComponent<SpriteRenderer>();
 		sprite_nota.color = new Color(1f,1f,1f,opacità_nota);
 		opacità_nota= opacità_nota - velocitaScomparitoria;
-		if (opacità_nota==0F){
-			Destroy(gameObject);
-		}
+
+			if (opacità_nota<=0F){
+				GameObject.Destroy(gameObject.gameObject);
+			
+			}
 		}else{
 		
-		if(Input.GetKeyDown("space")){
-			timer = Instantiate (input_timer, new Vector3(transform.position.x,transform.position.y + 0.5F, transform.position.z) , Quaternion.identity);
-			sprite_nota=input_timer.GetComponent<SpriteRenderer>();
-			
- 		}
+		if(sprite_nota){
 		opacità_nota=1f;
 		sprite_nota.color = new Color(1f,1f,1f,opacità_nota);
-		
-
+		pressing = true;
+	    
+		animation_reference.SetBool("isPressed", true);
+		}
 
 		 }
-		 if(Input.GetKeyUp("space")){
+		 if(Input.GetKeyUp(lettera.ToLower())){
 			Destroy(gameObject);
-			Destroy(timer);
+			pressing = false;
 		}
 //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-		int randomSection = (int)Random.Range(0F, 5F);
-		int randomChar = (int)Random.Range(0f,5f);
 
-		lettera=lettere[randomSection][randomChar];
+
 
 
 
@@ -70,4 +73,5 @@ public int maxDelay;
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 	}
+	
 }
