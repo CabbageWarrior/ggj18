@@ -15,6 +15,9 @@ namespace AI.Movement
         public float maximumLinearDeceleration = 1;
         public float maximumAngularAcceleration = 90;
 
+        [Space]
+        public GameObject pippottino;
+
         // State
         private Vector2 linearVelocity;
         private float angularVelocity;
@@ -87,6 +90,12 @@ namespace AI.Movement
 
             Debug.DrawLine(transform.position, transform.position + (Vector3)linearVelocity, Color.red);
             Debug.DrawLine(transform.position, transform.position + (Vector3)totalSteering, Color.green);
+        }
+
+        private void LateUpdate()
+        {
+            if (pippottino)
+                pippottino.transform.rotation = Quaternion.identity;
         }
     }
 }
