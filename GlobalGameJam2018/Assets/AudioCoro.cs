@@ -32,6 +32,10 @@ public class AudioCoro : MonoBehaviour
         {
             if (Input.GetKeyDown(keyCode))
             {
+                Note nota = new List<Note>(FindObjectsOfType<Note>()).Find(x => x.Lettera.ToLower() == keyCode.ToString().ToLower());
+
+                canPressNow = nota != null;
+
                 if (canPressNow)
                 {
                     StartCorrectAudio();
@@ -47,8 +51,6 @@ public class AudioCoro : MonoBehaviour
                 StopCorrectAudio();
             }
         }
-
-
     }
 
     private void StartCorrectAudio()
