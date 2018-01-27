@@ -52,7 +52,8 @@ namespace AI.Movement
         void Update()
         {
 
-            pippottinoRenderer.sortingOrder = (int)((pippottino.transform.position.y* - 1 * 100 ) + 1000);
+            //pippottinoRenderer.sortingOrder = (int)((pippottino.transform.position.y* - 1 * 100 ) + 1000);
+
 
             // Get the steering output
             Vector2 totalSteering = Vector2.zero;

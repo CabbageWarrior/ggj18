@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4354181653980938}
   - component: {fileID: 212658790755961118}
   - component: {fileID: 95442240775558088}
+  - component: {fileID: 114206899418310178}
   m_Layer: 0
   m_Name: Truzzino
   m_TagString: Untagged
@@ -143,6 +144,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   radius: 3
+--- !u!114 &114206899418310178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1172791088175506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635a992ac4e52cd4ca47fc9dc803976e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114403370153496842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -155,12 +167,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maximumLinearVelocity: 0.5
-  maximumAngularVelocity: 1
+  defaultLinearVelocity: 1
+  maximumLinearVelocityAttracted: 1
+  maximumAngularVelocity: 1000
   maximumLinearAcceleration: 1
   maximumLinearDeceleration: 1
-  maximumAngularAcceleration: 1
+  maximumAngularAcceleration: 1000
   pippottino: {fileID: 1172791088175506}
   seek: {fileID: 0}
+  separation: {fileID: 0}
+  cohesion: {fileID: 0}
+  myAnimator: {fileID: 0}
 --- !u!114 &114491016053382484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -187,8 +204,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   streetCenter: {fileID: 0}
-  coro: {fileID: 0}
   defaultNormalTarget: {fileID: 0}
+  SeekAmmount: 1
+  CohesionAmmount: 1
+  SeparationAmmount: 1
 --- !u!114 &114800616523495148
 MonoBehaviour:
   m_ObjectHideFlags: 1

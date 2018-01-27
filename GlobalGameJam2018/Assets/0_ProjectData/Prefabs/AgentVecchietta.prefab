@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 4093504128748324}
   - component: {fileID: 212759946701287082}
   - component: {fileID: 95475436951630836}
+  - component: {fileID: 114523443231186034}
   m_Layer: 0
   m_Name: Vecchietta
   m_TagString: Untagged
@@ -156,8 +157,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   streetCenter: {fileID: 0}
-  coro: {fileID: 0}
   defaultNormalTarget: {fileID: 0}
+  SeekAmmount: 1
+  CohesionAmmount: 1
+  SeparationAmmount: 1
 --- !u!114 &114354375623621846
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -170,12 +173,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maximumLinearVelocity: 0.1
-  maximumAngularVelocity: 1
+  defaultLinearVelocity: 1
+  maximumLinearVelocityAttracted: 1
+  maximumAngularVelocity: 1000
   maximumLinearAcceleration: 1
   maximumLinearDeceleration: 1
-  maximumAngularAcceleration: 1
+  maximumAngularAcceleration: 1000
   pippottino: {fileID: 1756052672595924}
   seek: {fileID: 0}
+  separation: {fileID: 0}
+  cohesion: {fileID: 0}
+  myAnimator: {fileID: 0}
 --- !u!114 &114443928847471048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -202,6 +210,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   radius: 3
+--- !u!114 &114523443231186034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756052672595924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635a992ac4e52cd4ca47fc9dc803976e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114574230404463968
 MonoBehaviour:
   m_ObjectHideFlags: 1

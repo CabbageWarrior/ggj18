@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4850311932138786}
   - component: {fileID: 212121064491770178}
   - component: {fileID: 95180518918844716}
+  - component: {fileID: 114811141561535540}
   m_Layer: 0
   m_Name: BusinessMan
   m_TagString: Untagged
@@ -156,8 +157,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentState: 0
   streetCenter: {fileID: 0}
-  coro: {fileID: 0}
   defaultNormalTarget: {fileID: 0}
+  SeekAmmount: 1
+  CohesionAmmount: 1
+  SeparationAmmount: 1
 --- !u!114 &114420595399477646
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -197,6 +200,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0.88
   targetTransform: {fileID: 0}
+--- !u!114 &114811141561535540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1082220872013522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 635a992ac4e52cd4ca47fc9dc803976e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114851709616908604
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -209,12 +223,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maximumLinearVelocity: 0.8
-  maximumAngularVelocity: 1
+  defaultLinearVelocity: 1
+  maximumLinearVelocityAttracted: 1
+  maximumAngularVelocity: 1000
   maximumLinearAcceleration: 1
   maximumLinearDeceleration: 1
-  maximumAngularAcceleration: 1
+  maximumAngularAcceleration: 1000
   pippottino: {fileID: 1082220872013522}
   seek: {fileID: 0}
+  separation: {fileID: 0}
+  cohesion: {fileID: 0}
+  myAnimator: {fileID: 0}
 --- !u!212 &212121064491770178
 SpriteRenderer:
   m_ObjectHideFlags: 1
