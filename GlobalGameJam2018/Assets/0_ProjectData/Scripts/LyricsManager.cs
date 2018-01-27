@@ -25,18 +25,6 @@ public class LyricsManager : MonoBehaviour
         previousTextPosition = previousText.transform.position;
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            SetNextValue(true);
-        }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            SetNextValue(false);
-        }
-    }
-
     public void SetNextValue(bool isCorrect)
     {
         if (isGameFinished) return;

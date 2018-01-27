@@ -22,14 +22,8 @@ public class destroyOnFinish : StateMachineBehaviour
         bool isStillPressing = notina.pressing;
 
         if (isStillPressing)
-        { 
-            string letter = notina.Lettera;
-
-            KeyCode tastoGiusto = (KeyCode)System.Enum.Parse(typeof(KeyCode), letter);
-
-            AudioCoro pippottinoCoro = new List<AudioCoro>(FindObjectsOfType<AudioCoro>()).Find(x => new List<KeyCode>(x.triggerButtons).Contains(tastoGiusto));
-
-            pippottinoCoro.StartSfigatedAudio();
+        {
+            notina.CallWrongButtonReleaseState();
         }
 
         Destroy(animator.gameObject);

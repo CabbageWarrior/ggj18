@@ -23,6 +23,8 @@ public class Note : MonoBehaviour
     
     TextMesh text;
 
+    LyricsManager lyricsManager;
+
     public string Lettera
     {
         get
@@ -38,8 +40,8 @@ public class Note : MonoBehaviour
 
         lettera = gameObject.GetComponentInChildren<TextMesh>().text;
         animation_reference = GetComponent<Animator>();
-        
-        Debug.Log(lettera);
+
+        lyricsManager = FindObjectOfType<LyricsManager>();
     }
 
     void Update()
@@ -52,8 +54,8 @@ public class Note : MonoBehaviour
 
             if (opacità_nota <= 0F)
             {
-                GameObject.Destroy(gameObject.gameObject);
-
+                CallWrongButtonReleaseState();
+                Destroy(gameObject.gameObject);
             }
         }
         else
@@ -71,8 +73,27 @@ public class Note : MonoBehaviour
         }
         if (Input.GetKeyUp(lettera.ToLower()))
         {
+            if (animation_reference.GetCurrentAnimatorStateInfo(0).IsName("orange_state"))
+            {
+                // Più punteggio!!!
+                lyricsManager.SetNextValue(true);
+            }
+            else if (animation_reference.GetCurrentAnimatorStateInfo(0).IsName("green_state"))
+            {
+                CallWrongButtonReleaseState();
+            }
+
             Destroy(gameObject);
             pressing = false;
         }
+    }
+
+    public void CallWrongButtonReleaseState()
+    {
+        KeyCode tastoGiusto = (KeyCode)System.Enum.Parse(typeof(KeyCode), lettera);
+
+        AudioCoro pippottinoCoro = new List<AudioCoro>(FindObjectsOfType<AudioCoro>()).Find(x => new List<KeyCode>(x.triggerButtons).Contains(tastoGiusto));
+
+        pippottinoCoro.StartSfigatedAudio();
     }
 }
