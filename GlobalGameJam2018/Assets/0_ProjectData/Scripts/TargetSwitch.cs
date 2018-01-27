@@ -12,6 +12,7 @@ public class TargetSwitch : MonoBehaviour
         
         collision.GetComponent<SeekBehaviour>().targetTransform = otherTarget;
         collision.GetComponent<Agent>().ChangeDirection();
+
     }
 
 }
