@@ -172,6 +172,31 @@ Prefab:
       propertyPath: targetTransform
       value: 
       objectReference: {fileID: 1430070062}
+    - target: {fileID: 114163816890079050, guid: 02f2320923af8ee4fab58b55a569a730,
+        type: 2}
+      propertyPath: SeekAmmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114163816890079050, guid: 02f2320923af8ee4fab58b55a569a730,
+        type: 2}
+      propertyPath: CohesionAmmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114163816890079050, guid: 02f2320923af8ee4fab58b55a569a730,
+        type: 2}
+      propertyPath: SeparationAmmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114692452272467510, guid: 02f2320923af8ee4fab58b55a569a730,
+        type: 2}
+      propertyPath: maximumAngularAcceleration
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114692452272467510, guid: 02f2320923af8ee4fab58b55a569a730,
+        type: 2}
+      propertyPath: maximumAngularVelocity
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02f2320923af8ee4fab58b55a569a730, type: 2}
   m_IsPrefabParent: 0
@@ -446,6 +471,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1358882569}
+  - component: {fileID: 1358882570}
   m_Layer: 0
   m_Name: Coro
   m_TagString: Untagged
@@ -466,6 +492,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1358882570
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1358882568}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!1001 &1422054537
 Prefab:
   m_ObjectHideFlags: 0
@@ -785,6 +836,31 @@ Prefab:
       propertyPath: targetTransform
       value: 
       objectReference: {fileID: 1430070062}
+    - target: {fileID: 114336610966401606, guid: 2acdff01bb5ed394da3206ae778d248c,
+        type: 2}
+      propertyPath: SeekAmmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114336610966401606, guid: 2acdff01bb5ed394da3206ae778d248c,
+        type: 2}
+      propertyPath: CohesionAmmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114336610966401606, guid: 2acdff01bb5ed394da3206ae778d248c,
+        type: 2}
+      propertyPath: SeparationAmmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114851709616908604, guid: 2acdff01bb5ed394da3206ae778d248c,
+        type: 2}
+      propertyPath: maximumAngularAcceleration
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114851709616908604, guid: 2acdff01bb5ed394da3206ae778d248c,
+        type: 2}
+      propertyPath: maximumAngularVelocity
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2acdff01bb5ed394da3206ae778d248c, type: 2}
   m_IsPrefabParent: 0
@@ -920,6 +996,31 @@ Prefab:
       propertyPath: targetTransform
       value: 
       objectReference: {fileID: 1430070062}
+    - target: {fileID: 114345143052096992, guid: afb17d8082257ed4cb9a925094c8582f,
+        type: 2}
+      propertyPath: SeekAmmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114345143052096992, guid: afb17d8082257ed4cb9a925094c8582f,
+        type: 2}
+      propertyPath: CohesionAmmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114345143052096992, guid: afb17d8082257ed4cb9a925094c8582f,
+        type: 2}
+      propertyPath: SeparationAmmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114354375623621846, guid: afb17d8082257ed4cb9a925094c8582f,
+        type: 2}
+      propertyPath: maximumAngularAcceleration
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114354375623621846, guid: afb17d8082257ed4cb9a925094c8582f,
+        type: 2}
+      propertyPath: maximumAngularVelocity
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: afb17d8082257ed4cb9a925094c8582f, type: 2}
   m_IsPrefabParent: 0
@@ -982,6 +1083,31 @@ Prefab:
       propertyPath: targetTransform
       value: 
       objectReference: {fileID: 1430070062}
+    - target: {fileID: 114639032873568092, guid: ba70cc4e80ff4304c8457fbd36bc5f3e,
+        type: 2}
+      propertyPath: SeekAmmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114639032873568092, guid: ba70cc4e80ff4304c8457fbd36bc5f3e,
+        type: 2}
+      propertyPath: CohesionAmmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114639032873568092, guid: ba70cc4e80ff4304c8457fbd36bc5f3e,
+        type: 2}
+      propertyPath: SeparationAmmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403370153496842, guid: ba70cc4e80ff4304c8457fbd36bc5f3e,
+        type: 2}
+      propertyPath: maximumAngularAcceleration
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 114403370153496842, guid: ba70cc4e80ff4304c8457fbd36bc5f3e,
+        type: 2}
+      propertyPath: maximumAngularVelocity
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba70cc4e80ff4304c8457fbd36bc5f3e, type: 2}
   m_IsPrefabParent: 0

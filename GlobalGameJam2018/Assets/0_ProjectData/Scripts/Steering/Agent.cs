@@ -9,6 +9,8 @@ namespace AI.Movement
     {
         // Parameters
         public float maximumLinearVelocity = 1;
+        public float defaultLinearVelocity = 1;
+        public float maximumLinearVelocityAttracted = 1;
         public float maximumAngularVelocity = 90; // degrees per second
 
         public float maximumLinearAcceleration = 1;
@@ -28,15 +30,19 @@ namespace AI.Movement
         private float angularAcceleration;
 
         [HideInInspector]public SeekBehaviour seek;
+        [HideInInspector]public SeparationBehaviour separation;
+        [HideInInspector]public CohesionBehaviour cohesion;
         private SteeringBehaviour[] steeringBehaviours;
 
         [HideInInspector]public Animator myAnimator;
 
 
-        void Start()
+        void Awake()
         {
             steeringBehaviours = GetComponents<SteeringBehaviour>();
+            separation = GetComponent<SeparationBehaviour>();
             seek = GetComponent<SeekBehaviour>();
+            cohesion = GetComponent<CohesionBehaviour>();
             pippottinoRenderer = pippottino.GetComponent<SpriteRenderer>();
             ChangeDirection();
             myAnimator = GetComponentInChildren<Animator>();
