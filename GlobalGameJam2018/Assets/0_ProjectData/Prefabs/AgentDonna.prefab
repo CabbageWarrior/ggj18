@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114674405901582072}
   - component: {fileID: 58877317651016868}
   - component: {fileID: 50362153895230508}
+  - component: {fileID: 114163816890079050}
   m_Layer: 0
   m_Name: AgentDonna
   m_TagString: Untagged
@@ -58,7 +59,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1161184362531184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.81, y: -1.2299999, z: 0}
+  m_LocalPosition: {x: 5.655, y: -2.745, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4697788317751760}
@@ -169,6 +170,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0
   radius: 3
+--- !u!114 &114163816890079050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1161184362531184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 760fb090bb7ae464098c23296c24568c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  streetCenter: {fileID: 0}
+  coro: {fileID: 0}
+  defaultNormalTarget: {fileID: 0}
 --- !u!114 &114299484665640172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -207,11 +223,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maximumLinearVelocity: 0.6
-  maximumAngularVelocity: 1000
+  maximumAngularVelocity: 1
   maximumLinearAcceleration: 1
   maximumLinearDeceleration: 1
-  maximumAngularAcceleration: 1000
+  maximumAngularAcceleration: 1
   pippottino: {fileID: 1325902506377660}
+  seek: {fileID: 0}
 --- !u!212 &212852513744234500
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -245,7 +262,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10029
   m_Sprite: {fileID: 21300000, guid: 0bbb3c5bfadd55f4380f9dac4e046859, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

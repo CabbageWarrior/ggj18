@@ -27,8 +27,11 @@ namespace AI.Movement
         private float linearAcceleration;
         private float angularAcceleration;
 
-        private SeekBehaviour seek;
+        [HideInInspector]public SeekBehaviour seek;
         private SteeringBehaviour[] steeringBehaviours;
+
+        [HideInInspector]public Animator myAnimator;
+
 
         void Start()
         {
@@ -36,6 +39,7 @@ namespace AI.Movement
             seek = GetComponent<SeekBehaviour>();
             pippottinoRenderer = pippottino.GetComponent<SpriteRenderer>();
             ChangeDirection();
+            myAnimator = GetComponentInChildren<Animator>();
 
         }
 
@@ -114,13 +118,16 @@ namespace AI.Movement
 
             if (seek.targetTransform.position.x > transform.position.x)
             {
+                Debug.Log("asd");
                 pippottinoRenderer.flipX = true;
-                transform.rotation = Quaternion.identity;
+                transform.right = -(transform.position - seek.targetTransform.position).normalized;
             }
             else
             {
+                Debug.Log("buiubiausb");
+
                 pippottinoRenderer.flipX = false;
-                transform.rotation = new Quaternion(0, 0, 0.5f, 0);
+                transform.right = -(transform.position - seek.targetTransform.position).normalized;
             }
         }
     }

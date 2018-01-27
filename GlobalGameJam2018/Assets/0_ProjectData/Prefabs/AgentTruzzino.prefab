@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 114170708918130336}
   - component: {fileID: 58932584856502180}
   - component: {fileID: 50942088202367478}
+  - component: {fileID: 114639032873568092}
   m_Layer: 0
   m_Name: AgentTruzzino
   m_TagString: Untagged
@@ -57,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1770086756439718}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.01, y: -1.0699998, z: 0}
+  m_LocalPosition: {x: 5.987, y: -2.428, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4354181653980938}
@@ -154,11 +155,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maximumLinearVelocity: 0.5
-  maximumAngularVelocity: 1000
+  maximumAngularVelocity: 1
   maximumLinearAcceleration: 1
   maximumLinearDeceleration: 1
-  maximumAngularAcceleration: 1000
+  maximumAngularAcceleration: 1
   pippottino: {fileID: 1172791088175506}
+  seek: {fileID: 0}
 --- !u!114 &114491016053382484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -172,6 +174,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weight: 0.83
   targetTransform: {fileID: 0}
+--- !u!114 &114639032873568092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1770086756439718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 760fb090bb7ae464098c23296c24568c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
+  streetCenter: {fileID: 0}
+  coro: {fileID: 0}
+  defaultNormalTarget: {fileID: 0}
 --- !u!114 &114800616523495148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -231,7 +248,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10029
   m_Sprite: {fileID: 21300000, guid: e8a9bfd1f70735344bc5c00a0cfac77b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
