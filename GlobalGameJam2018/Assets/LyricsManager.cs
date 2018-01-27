@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class LyricsManager : MonoBehaviour
 {
-    public Text textToFill;
-    public Text previousText;
+    public TextMesh textToFill;
+    public TextMesh previousText;
 
     private List<LyricsRiga> righe;
     private LyricsRiga currentRiga;
@@ -70,7 +70,7 @@ public class LyricsManager : MonoBehaviour
     private IEnumerator MovePreviousText()
     {
         float deltaTime = 2f;
-        float deltaY = .1f;
+        float deltaY = .01f;
         float startTime = Time.time;
         float currentTime = startTime;
 
