@@ -53,7 +53,7 @@ public class AudioCoro : MonoBehaviour
         }
     }
 
-    private void StartCorrectAudio()
+    public void StartCorrectAudio()
     {
         if (!audioGiusto.isPlaying)
         {
@@ -72,7 +72,7 @@ public class AudioCoro : MonoBehaviour
         }
     }
 
-    private void StopCorrectAudio()
+    public void StopCorrectAudio()
     {
         if (audioGiusto.isPlaying)
         {
@@ -82,7 +82,7 @@ public class AudioCoro : MonoBehaviour
         }
     }
 
-    private void StartSfigatedAudio()
+    public void StartSfigatedAudio()
     {
         StopCorrectAudio();
 
