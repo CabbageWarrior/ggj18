@@ -239,6 +239,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f60736793e86d2c4fa529076726aea85, type: 3}
   - {fileID: 8300000, guid: 2b08ece0aae1da34a9869ab617e916b0, type: 3}
   - {fileID: 8300000, guid: 096635cb2657c3644a212b56510942f5, type: 3}
+  - {fileID: 8300000, guid: 81afd848127ff9845b357fc536999cc5, type: 3}
   triggerButtons: 7400000079000000660000006700000076000000
   canPressNow: 0
 --- !u!212 &212038141941487744
