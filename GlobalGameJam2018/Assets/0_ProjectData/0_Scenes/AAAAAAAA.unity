@@ -161,9 +161,135 @@ Prefab:
       propertyPath: m_Name
       value: LyricsRiga (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114987245529469332, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: Crea
+      objectReference: {fileID: 0}
+    - target: {fileID: 114987245529469332, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "\xE7].!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114783263316652338, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'tor '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114783263316652338, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "*#\xE7 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107894098091770, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'of '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107894098091770, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "_\xA3 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176968041354716, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'light, '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176968041354716, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "\xB0'!^; "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501721757829190, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'dark, '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501721757829190, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '*"-@ '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564167306784740, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: flow
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564167306784740, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: ",&!\xB0"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726679675795226, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'ers '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726679675795226, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "\xE7@^ "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'and '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "[\xB0\xA7 "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99294c5ce19b8bb48973a7fa8073f52c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &102106669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1045188335180046, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 102106670}
+  - component: {fileID: 102106671}
+  m_Layer: 0
+  m_Name: Sillaba09
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &102106670
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4068425242708548, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102106669}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 298114393}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &102106671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102106669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 413e7c93ec82b1c4fa776b969b65f71c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statoSillaba: 0
+  correctText: 'scape '
+  wrongText: "\xEC?\"\\- "
 --- !u!4 &126125929 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4523245925020290, guid: 99294c5ce19b8bb48973a7fa8073f52c,
@@ -215,6 +341,52 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99294c5ce19b8bb48973a7fa8073f52c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &215466883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1045188335180046, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 215466884}
+  - component: {fileID: 215466885}
+  m_Layer: 0
+  m_Name: Sillaba09
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &215466884
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4068425242708548, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215466883}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 126125929}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &215466885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 215466883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 413e7c93ec82b1c4fa776b969b65f71c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statoSillaba: 0
+  correctText: fore
+  wrongText: "*@\xB0-"
 --- !u!4 &295725313 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4523245925020290, guid: 99294c5ce19b8bb48973a7fa8073f52c,
@@ -264,6 +436,86 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114987245529469332, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: ' Our '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114783263316652338, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'Lord '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107894098091770, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'is '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176968041354716, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: co
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501721757829190, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'ming '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564167306784740, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'on '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726679675795226, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'this '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: world
+      objectReference: {fileID: 0}
+    - target: {fileID: 114987245529469332, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '*#@ '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114783263316652338, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "@\xE7*- "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107894098091770, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "\xA7- "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176968041354716, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "?\xE7"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501721757829190, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "#\xF2[\xA7 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564167306784740, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '*] '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726679675795226, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "\xB0-\xE7# "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "_![.\xB0"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99294c5ce19b8bb48973a7fa8073f52c, type: 2}
   m_IsPrefabParent: 0
@@ -310,6 +562,86 @@ Prefab:
       propertyPath: m_Name
       value: LyricsRiga (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114987245529469332, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'A '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114987245529469332, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '+ '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114783263316652338, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: lo
+      objectReference: {fileID: 0}
+    - target: {fileID: 114783263316652338, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "\xF2@"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107894098091770, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 've '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107894098091770, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '''^ '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176968041354716, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'so '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176968041354716, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "\xEC? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501721757829190, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: end
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501721757829190, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "\xF9[] "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564167306784740, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'we '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564167306784740, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "\xA3, "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726679675795226, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'can''t '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726679675795226, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "_\xB0\\\xEC "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: ':'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: e
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99294c5ce19b8bb48973a7fa8073f52c, type: 2}
   m_IsPrefabParent: 0
@@ -340,7 +672,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 502947241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 130.62854, y: 91.35927, z: -3.1875}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 952798441}
@@ -403,6 +735,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textToFill: {fileID: 952798440}
   previousText: {fileID: 952798439}
+--- !u!1 &753656874
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1045188335180046, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 753656875}
+  - component: {fileID: 753656876}
+  m_Layer: 0
+  m_Name: Sillaba10
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &753656875
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4068425242708548, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 753656874}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 126125929}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &753656876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 753656874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 413e7c93ec82b1c4fa776b969b65f71c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statoSillaba: 0
+  correctText: told
+  wrongText: ",&\xEC-"
 --- !u!4 &848468264 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4523245925020290, guid: 99294c5ce19b8bb48973a7fa8073f52c,
@@ -657,6 +1035,76 @@ Prefab:
       propertyPath: m_Name
       value: LyricsRiga (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114987245529469332, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'Oh '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114987245529469332, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '!" '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114783263316652338, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'Lord, '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114783263316652338, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: ']*"- '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107894098091770, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'our '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107894098091770, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '!,= '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176968041354716, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: Her
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176968041354716, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "\xB0@\xF9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501721757829190, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'ald '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501721757829190, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '''^" '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564167306784740, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'of '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564167306784740, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "\xE0\xE7 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726679675795226, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'love '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726679675795226, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "#\xB0\xF9^ "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99294c5ce19b8bb48973a7fa8073f52c, type: 2}
   m_IsPrefabParent: 0
@@ -703,9 +1151,135 @@ Prefab:
       propertyPath: m_Name
       value: LyricsRiga (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114987245529469332, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'And '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114987245529469332, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "\xE7_] "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114783263316652338, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'life, '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114783263316652338, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '",!^ '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107894098091770, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'and '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107894098091770, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '*!@ '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176968041354716, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: ut
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176968041354716, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: ";\xA3"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501721757829190, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'ter '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501721757829190, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "\xE7@^ "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564167306784740, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: cha
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564167306784740, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "\"=\xEC"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726679675795226, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'os, '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726679675795226, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '?! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'and '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '(:" '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99294c5ce19b8bb48973a7fa8073f52c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1713283940
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1045188335180046, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1713283941}
+  - component: {fileID: 1713283942}
+  m_Layer: 0
+  m_Name: Sillaba09
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1713283941
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4068425242708548, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1713283940}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 848468264}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1713283942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1713283940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 413e7c93ec82b1c4fa776b969b65f71c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statoSillaba: 0
+  correctText: trees.
+  wrongText: "\xF2\xA7!\\?"
 --- !u!1 &1771068557
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,6 +1385,86 @@ Prefab:
       propertyPath: m_Name
       value: LyricsRiga (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114987245529469332, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'The '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114783263316652338, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: ga
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107894098091770, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'tes '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114987245529469332, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: ']*@'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114783263316652338, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '+:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114107894098091770, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "@\xB0_ "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176968041354716, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'are '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501721757829190, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: o
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564167306784740, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: pen
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726679675795226, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'ed '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: correctText
+      value: 'as '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114176968041354716, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: ';#[ '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114501721757829190, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: ''''
+      objectReference: {fileID: 0}
+    - target: {fileID: 114564167306784740, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '!_"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114726679675795226, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: "@\xB0 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+        type: 2}
+      propertyPath: wrongText
+      value: '^? '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99294c5ce19b8bb48973a7fa8073f52c, type: 2}
   m_IsPrefabParent: 0
@@ -860,6 +1514,52 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 99294c5ce19b8bb48973a7fa8073f52c, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1935524884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1045188335180046, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1935524885}
+  - component: {fileID: 1935524886}
+  m_Layer: 0
+  m_Name: Sillaba09
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1935524885
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 4068425242708548, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1935524884}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1046029588}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1935524886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114773551944128052, guid: 99294c5ce19b8bb48973a7fa8073f52c,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1935524884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 413e7c93ec82b1c4fa776b969b65f71c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  statoSillaba: 0
+  correctText: 'bees, '
+  wrongText: '?''$- '
 --- !u!1 &1992265650
 GameObject:
   m_ObjectHideFlags: 0
