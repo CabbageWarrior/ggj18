@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 566465519}
   - component: {fileID: 566465518}
   - component: {fileID: 566465517}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: scherata_vinta_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

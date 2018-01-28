@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 767818129}
   - component: {fileID: 767818128}
   - component: {fileID: 767818127}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: VittoriaSuper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 2074445669}
   - component: {fileID: 2074445668}
   - component: {fileID: 2074445667}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Vittoriascritta_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
