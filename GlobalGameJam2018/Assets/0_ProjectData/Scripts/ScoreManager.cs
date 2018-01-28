@@ -20,15 +20,20 @@ public class ScoreManager : MonoBehaviour
     public bool isPlaying = true;
 
     public int score = 0;
-    public int minimoPunteggioVittoria = 0;
+    int minimoPunteggioVittoria = 0;
     public int[] milestones;
     int milestoneReached = 0;
+
+    private LyricsSillaba[] sillabeattive;
 
     LyricsManager LM;
 
     private void Start()
     {
         LM = FindObjectOfType<LyricsManager>();
+        sillabeattive = FindObjectsOfType<LyricsSillaba>();
+        minimoPunteggioVittoria = sillabeattive.Length * aumentoDiPunteggio;
+        Debug.Log(sillabeattive.Length.ToString() + " sillabe: max " + minimoPunteggioVittoria.ToString() + " punti.");
     }
 
     private void Update()
