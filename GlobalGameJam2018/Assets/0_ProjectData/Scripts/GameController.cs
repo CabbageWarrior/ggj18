@@ -6,10 +6,11 @@ public class GameController : MonoBehaviour
 {
     List<string> lettere = new List<string>(5);
     public int minDelay;
-
+   
     public int maxDelay;
     Random random = new Random();
-    int i = 0;
+    float i = 0;
+    public int impattoframerate;
     public int timer_cont;
     public GameObject nota;
     string lettera;
@@ -34,8 +35,8 @@ public class GameController : MonoBehaviour
     {
         if (SM.isPlaying)
         {
-
-            i++;
+          
+            i= i + impattoframerate* Time.deltaTime; 
             if (i >= timer_cont)
             {
                 bool succes = false;
