@@ -14,3 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/0_ProjectData/0_Scenes/Outro.unity
     guid: a18fe7350979eb441b4e8dfb164d4233
+  - enabled: 1
+    path: Assets/0_ProjectData/0_Scenes/OutroMeh.unity
+    guid: 5ba8855ae82e2e94aa9d899bcbeb2000
+  - enabled: 1
+    path: Assets/0_ProjectData/0_Scenes/OutroSega.unity
+    guid: 9a44f07685618ef4e90927835a78062c
