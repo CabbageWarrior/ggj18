@@ -60,7 +60,7 @@ public class ScoreManager : MonoBehaviour
         if (LM.isGameFinished)
         {
 
-            if (score == milestones[milestones.Length - 1])
+            if (score >= milestones[milestones.Length - 1])
             {
                 isPlaying = false;
                 SceneManager.LoadScene("Outro", LoadSceneMode.Additive);

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d704d9ee9ab2eac46817937c6bda7267
-timeCreated: 1517135648
+timeCreated: 1517143837
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -109,9 +109,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1136
+        y: 1126
         width: 1024
-        height: 568
+        height: 578
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,9 +123,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1024
-        y: 1136
+        y: 1126
         width: 1024
-        height: 568
+        height: 578
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,9 +137,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 568
+        y: 548
         width: 1024
-        height: 568
+        height: 578
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,23 +151,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1024
-        y: 568
+        y: 548
         width: 1024
-        height: 568
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Schermata_game_over_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 568
+        height: 578
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
