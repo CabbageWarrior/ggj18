@@ -1,14 +1,15 @@
 fileFormatVersion: 2
-guid: d704d9ee9ab2eac46817937c6bda7267
-timeCreated: 1517143837
+guid: f1df37a40a18e69439cfe3c2121024a4
+timeCreated: 1517144545
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Schermata_game_over_0
-    21300002: Schermata_game_over_1
-    21300004: Schermata_game_over_2
-    21300006: Schermata_game_over_3
-    21300008: Schermata_game_over_4
+    21300000: GOOD_JOB_MORTAL_0
+    21300002: GOOD_JOB_MORTAL_1
+    21300004: GOOD_JOB_MORTAL_2
+    21300006: GOOD_JOB_MORTAL_3
+    21300008: GOOD_JOB_MORTAL_4
+    21300010: GOOD_JOB_MORTAL_5
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -81,37 +82,17 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Schermata_game_over_0
+      name: GOOD_JOB_MORTAL_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1126
-        width: 1024
-        height: 578
+        y: 160
+        width: 300
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,13 +100,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Schermata_game_over_1
+      name: GOOD_JOB_MORTAL_1
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1126
-        width: 1024
-        height: 578
+        x: 300
+        y: 160
+        width: 300
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,13 +114,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Schermata_game_over_2
+      name: GOOD_JOB_MORTAL_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 160
+        width: 300
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GOOD_JOB_MORTAL_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 548
-        width: 1024
-        height: 578
+        y: 0
+        width: 300
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,13 +142,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Schermata_game_over_3
+      name: GOOD_JOB_MORTAL_4
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 548
-        width: 1024
-        height: 578
+        x: 300
+        y: 0
+        width: 300
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: GOOD_JOB_MORTAL_5
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 300
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
