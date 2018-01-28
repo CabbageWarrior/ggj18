@@ -94,6 +94,7 @@ public class Note : MonoBehaviour
 
         AudioCoro pippottinoCoro = new List<AudioCoro>(FindObjectsOfType<AudioCoro>()).Find(x => new List<KeyCode>(x.triggerButtons).Contains(tastoGiusto));
 
+        lyricsManager.SetNextValue(false);
         pippottinoCoro.StartSfigatedAudio();
     }
 }
