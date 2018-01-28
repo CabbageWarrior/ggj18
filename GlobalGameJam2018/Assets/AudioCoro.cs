@@ -57,7 +57,19 @@ public class AudioCoro : MonoBehaviour
                 }
             }
         }
-    }
+        else
+        {
+            if (audioGiusto.isPlaying)
+            {
+                audioGiusto.Stop();
+            }
+            if(audioSbagliato.isPlaying)
+            {
+                audioSbagliato.Stop();
+            }
+        }
+            
+        }
 
     public void StartCorrectAudio()
     {
