@@ -53,6 +53,7 @@ namespace AI.Movement
         private void Start()
         {
             agentispawnati = new List<Agent>(FindObjectsOfType<Agent>());
+            Debug.Log(agentispawnati.Count);
             
         }
 
