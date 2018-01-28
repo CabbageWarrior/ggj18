@@ -18,6 +18,7 @@ public class LyricsRiga : MonoBehaviour
     public string SetNextValue(bool isCorrect)
     {
         LyricsSillaba sillabaToSet = sillabe.Find(x => x.statoSillaba == SillabaState.InAttesa);
+        if (!sillabaToSet) return ""; // Pezza brutta
         string valueToRender = sillabaToSet.SetSillabaState(isCorrect);
 
         StartCoroutine(CheckIfRimangonoSillabe());

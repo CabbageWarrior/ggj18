@@ -54,24 +54,22 @@ public class LyricsManager : MonoBehaviour
             if (!currentRiga)
             {
                 isGameFinished = true;
-                GetComponent<AudioSource>().Stop(); 
+                GetComponent<AudioSource>().Stop();
             }
         }
     }
 
     private IEnumerator MovePreviousText()
     {
-        float deltaTime = 2f;
-        float deltaY = .01f;
-        float startTime = Time.time;
-        float currentTime = startTime;
+        float deltaY = .45f;
 
-        while (currentTime < startTime + deltaTime)
+        //while (currentTime < startTime + deltaTime)
+        while (previousText.transform.position.y < previousTextPosition.y + deltaY)
         {
-            currentTime += Time.deltaTime;
-            previousText.transform.position += new Vector3(0, deltaY, 0);
+            previousText.transform.position += new Vector3(0, deltaY * Time.deltaTime / 2, 0);
             yield return null;
         }
-        
+        previousText.transform.position = previousTextPosition + new Vector3(0, deltaY, 0);
+
     }
 }
