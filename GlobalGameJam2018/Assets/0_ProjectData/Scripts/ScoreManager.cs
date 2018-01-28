@@ -18,6 +18,7 @@ public class ScoreManager : MonoBehaviour
     public int aumentoDiPunteggio;
 
     public bool isPlaying = true;
+    bool aleadySpawned = false;
 
     public int score = 0;
     int minimoPunteggioVittoria = 0;
@@ -57,9 +58,9 @@ public class ScoreManager : MonoBehaviour
             }
         }
 
-        if (LM.isGameFinished)
+        if (LM.isGameFinished && !aleadySpawned)
         {
-
+            aleadySpawned = true;
             if (score >= milestones[milestones.Length - 1])
             {
                 isPlaying = false;
