@@ -188,7 +188,7 @@ MonoBehaviour:
   meNeVadoDaStoPostoDiMerda: {fileID: 0}
   SeekAmmount: 0.3
   CohesionAmmount: 0.9
-  SeparationAmmount: 0.5
+  SeparationAmmount: 0.3
 --- !u!114 &114299484665640172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -240,10 +240,10 @@ MonoBehaviour:
   maximumLinearVelocity: 0.6
   defaultLinearVelocity: 1
   maximumLinearVelocityAttracted: 1
-  maximumAngularVelocity: 1000
+  maximumAngularVelocity: 10
   maximumLinearAcceleration: 1
   maximumLinearDeceleration: 1
-  maximumAngularAcceleration: 1000
+  maximumAngularAcceleration: 10
   pippottino: {fileID: 1325902506377660}
   seek: {fileID: 0}
   separation: {fileID: 0}

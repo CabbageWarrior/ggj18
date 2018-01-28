@@ -125,7 +125,7 @@ namespace AI.Movement
 
             if (seek.targetTransform.position.x > transform.position.x)
             {
-                Debug.Log("asd");
+
                 pippottinoRenderer.flipX = true;
                 transform.right = -(transform.position - seek.targetTransform.position).normalized;
             }

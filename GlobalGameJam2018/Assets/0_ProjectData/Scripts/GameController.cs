@@ -40,7 +40,7 @@ public class GameController : MonoBehaviour
                 int randomChar = (int)Random.Range(0f, 5f);
 
                 lettera = lettere[randomSection][randomChar].ToString();
-                Debug.Log(lettera);
+                //Debug.Log(lettera);
                 if ("QWASZ".Contains(lettera))
                 {
                     succes = SpawnNewLetter(0);

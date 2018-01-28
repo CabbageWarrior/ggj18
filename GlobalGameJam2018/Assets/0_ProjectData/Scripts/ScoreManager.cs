@@ -10,12 +10,13 @@ public class ScoreManager : MonoBehaviour {
     public Transform defaultNormalTarget;
     public Transform meNeVadoTarget;
 
+    public int maxPippottiniScazzati = 2;
     public int penalitaScarsezza;
     public int aumentoDiPunteggio;
 
     public int score = 0;
     public int[] milestones;
-    bool ischecking = false;
+  
     int milestoneReached = 0;
 
     private void Update()
@@ -34,6 +35,9 @@ public class ScoreManager : MonoBehaviour {
         else if(score < milestones[milestoneReached])
         {
             milestoneReached--;
+
+            Scazzo();
+
         } 
     }
 
@@ -58,12 +62,22 @@ public class ScoreManager : MonoBehaviour {
     public void SubtractPoints()
     {
         score -= penalitaScarsezza;
-        if (score > 0)
+        if (score < 0)
             score = 0;
     }
 
     public void AddPoint()
     {
         score += aumentoDiPunteggio;
+    }
+
+    void Scazzo()
+    {
+        List<AgentStateMachine> pippottini = new List<AgentStateMachine>(FindObjectsOfType<AgentStateMachine>()).FindAll(x => x.currentState == State.POGGING);
+
+        for (int i = 0; i < pippottini.Count && i < maxPippottiniScazzati; i++)
+        {
+            pippottini[i].CheckState(State.SCAZZED);
+        }
     }
 }
