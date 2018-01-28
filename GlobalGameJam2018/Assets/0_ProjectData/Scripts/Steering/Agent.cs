@@ -131,7 +131,7 @@ namespace AI.Movement
             }
             else
             {
-                Debug.Log("buiubiausb");
+
 
                 pippottinoRenderer.flipX = false;
                 transform.right = -(transform.position - seek.targetTransform.position).normalized;

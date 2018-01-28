@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 3eb17aca23bd14246a9ce6ed9cf8b5a8
-timeCreated: 1517136046
+timeCreated: 1517137045
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -91,10 +91,10 @@ TextureImporter:
       name: Coro_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 578
-        width: 1024
-        height: 578
+        x: 250
+        y: 891
+        width: 519
+        height: 66
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -105,10 +105,10 @@ TextureImporter:
       name: Coro_1
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 578
-        width: 1024
-        height: 578
+        x: 1274
+        y: 891
+        width: 519
+        height: 70
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,10 +119,10 @@ TextureImporter:
       name: Coro_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 578
+        x: 250
+        y: 315
+        width: 519
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,10 +133,10 @@ TextureImporter:
       name: Coro_3
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 1024
-        height: 578
+        x: 1274
+        y: 315
+        width: 519
+        height: 68
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
