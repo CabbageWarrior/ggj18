@@ -161,5 +161,9 @@ namespace AI.Movement
         {
             agentispawnati.Add(this);
         }
+        public void toglidalista()
+        {
+            agentispawnati.Remove(this);
+        }
     }
 }
