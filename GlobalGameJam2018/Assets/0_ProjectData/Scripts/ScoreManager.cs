@@ -21,7 +21,7 @@ public class ScoreManager : MonoBehaviour
     bool aleadySpawned = false;
 
     public int score = 0;
-    int minimoPunteggioVittoria = 0;
+    public int minimoPunteggioVittoria = 0;
     public int[] milestones;
     int milestoneReached = 0;
 
