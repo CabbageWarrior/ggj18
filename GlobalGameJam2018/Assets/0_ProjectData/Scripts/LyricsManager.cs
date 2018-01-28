@@ -14,7 +14,7 @@ public class LyricsManager : MonoBehaviour
 
     private Vector3 previousTextPosition;
 
-    private bool isGameFinished = false;
+    public bool isGameFinished = false;
 
     // Use this for initialization
     void Start()
@@ -27,7 +27,10 @@ public class LyricsManager : MonoBehaviour
 
     public void SetNextValue(bool isCorrect)
     {
-        if (isGameFinished) return;
+        if (isGameFinished)
+        {
+            return;
+        }
 
         string valueToRender = currentRiga.SetNextValue(isCorrect);
 
@@ -51,6 +54,7 @@ public class LyricsManager : MonoBehaviour
             if (!currentRiga)
             {
                 isGameFinished = true;
+                GetComponent<AudioSource>().Stop(); 
             }
         }
     }

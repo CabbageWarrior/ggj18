@@ -37,11 +37,6 @@ public class AgentStateMachine : MonoBehaviour
        
     }
 
-    private void Update()
-    {
-       
-    }
-
     public void CheckState(State newState)
     {
         if (newState == 0 && currentState != State.NORMAL)

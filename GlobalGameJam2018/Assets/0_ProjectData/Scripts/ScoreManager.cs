@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 using AI.Movement;
-public class ScoreManager : MonoBehaviour {
+using UnityEngine.SceneManagement;
+
+public class ScoreManager : MonoBehaviour
+{
 
     public GameObject[] pippotti;
     public Transform[] spawnspots;
@@ -14,31 +17,68 @@ public class ScoreManager : MonoBehaviour {
     public int penalitaScarsezza;
     public int aumentoDiPunteggio;
 
+    public bool isPlaying = true;
+
     public int score = 0;
+    public int minimoPunteggioVittoria = 0;
     public int[] milestones;
-  
     int milestoneReached = 0;
+
+    LyricsManager LM;
+
+    private void Start()
+    {
+        LM = FindObjectOfType<LyricsManager>();
+    }
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.G))
+
+        if (isPlaying)
         {
-            SpawnNewBellissimPippottino();
+            if (Input.GetKeyDown(KeyCode.G))
+            {
+                SpawnNewBellissimPippottino();
+            }
+
+            if (milestoneReached < milestones.Length - 1 && score >= milestones[milestoneReached + 1])
+            {
+                milestoneReached++;
+                SpawnNewBellissimPippottino(); SpawnNewBellissimPippottino(); SpawnNewBellissimPippottino(); SpawnNewBellissimPippottino(); SpawnNewBellissimPippottino();
+
+            }
+            else if (score < milestones[milestoneReached])
+            {
+                milestoneReached--;
+
+                Scazzo();
+
+            }
         }
 
-        if(milestoneReached < milestones.Length - 1 && score >= milestones[milestoneReached + 1])
+        if (LM.isGameFinished)
         {
-            milestoneReached++;
-            SpawnNewBellissimPippottino(); SpawnNewBellissimPippottino(); SpawnNewBellissimPippottino(); SpawnNewBellissimPippottino(); SpawnNewBellissimPippottino();
+
+            if (score == milestones[milestones.Length - 1])
+            {
+                isPlaying = false;
+                SceneManager.LoadScene("Outro", LoadSceneMode.Additive);
+            }
+            else if (score > minimoPunteggioVittoria && score < milestones[milestones.Length - 1])
+            {
+                isPlaying = false;
+                SceneManager.LoadScene("OutroMeh", LoadSceneMode.Additive);
+            }
+            else
+            {
+                isPlaying = false;
+                SceneManager.LoadScene("OutroSega", LoadSceneMode.Additive);
+            }
 
         }
-        else if(score < milestones[milestoneReached])
-        {
-            milestoneReached--;
 
-            Scazzo();
 
-        } 
+
     }
 
     void SpawnNewBellissimPippottino()
@@ -55,7 +95,7 @@ public class ScoreManager : MonoBehaviour {
         pippottinoCultista.GetComponent<AgentStateMachine>().meNeVadoDaStoPostoDiMerda = meNeVadoTarget;
         yield return null;
         pippottinoCultista.GetComponent<AgentStateMachine>().CheckState(State.ATTRACTED);
-    
+
 
     }
 

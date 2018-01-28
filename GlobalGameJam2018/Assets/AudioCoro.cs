@@ -19,36 +19,42 @@ public class AudioCoro : MonoBehaviour
 
     private Animator anim;
     private Coroutine audioSbagliatoCoroutine;
+    ScoreManager SM;
 
     private void Start()
     {
+        SM = FindObjectOfType<ScoreManager>();
         anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        foreach (KeyCode keyCode in triggerButtons)
+        if (SM.isPlaying)
         {
-            if (Input.GetKeyDown(keyCode))
+
+            foreach (KeyCode keyCode in triggerButtons)
             {
-                Note nota = new List<Note>(FindObjectsOfType<Note>()).Find(x => x.Lettera.ToLower() == keyCode.ToString().ToLower());
-
-                canPressNow = nota != null;
-
-                if (canPressNow)
+                if (Input.GetKeyDown(keyCode))
                 {
-                    StartCorrectAudio();
-                }
-                else
-                {
-                    StartSfigatedAudio();
-                }
-            }
+                    Note nota = new List<Note>(FindObjectsOfType<Note>()).Find(x => x.Lettera.ToLower() == keyCode.ToString().ToLower());
 
-            if (Input.GetKeyUp(keyCode))
-            {
-                StopCorrectAudio();
+                    canPressNow = nota != null;
+
+                    if (canPressNow)
+                    {
+                        StartCorrectAudio();
+                    }
+                    else
+                    {
+                        StartSfigatedAudio();
+                    }
+                }
+
+                if (Input.GetKeyUp(keyCode))
+                {
+                    StopCorrectAudio();
+                }
             }
         }
     }

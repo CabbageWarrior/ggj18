@@ -16,8 +16,10 @@ public class GameController : MonoBehaviour
     public GameObject[] spawnPoints;
     GameObject new_instance;
     Vector3 offset;
+    ScoreManager SM;
     void Start()
     {
+        SM = FindObjectOfType<ScoreManager>();
         offset = new Vector3(0F, 0F, 0F);
         lettere.Add("QWASZ");
         lettere.Add("ERDXC");
@@ -30,41 +32,45 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        i++;
-        if (i >= timer_cont)
+        if (SM.isPlaying)
         {
-            bool succes = false;
-            while (!succes)
+
+            i++;
+            if (i >= timer_cont)
             {
-                int randomSection = (int)Random.Range(0F, 5F);
-                int randomChar = (int)Random.Range(0f, 5f);
+                bool succes = false;
+                while (!succes)
+                {
+                    int randomSection = (int)Random.Range(0F, 5F);
+                    int randomChar = (int)Random.Range(0f, 5f);
 
-                lettera = lettere[randomSection][randomChar].ToString();
-                //Debug.Log(lettera);
-                if ("QWASZ".Contains(lettera))
-                {
-                    succes = SpawnNewLetter(0);
+                    lettera = lettere[randomSection][randomChar].ToString();
+                    //Debug.Log(lettera);
+                    if ("QWASZ".Contains(lettera))
+                    {
+                        succes = SpawnNewLetter(0);
+                    }
+                    if ("ERDXC".Contains(lettera))
+                    {
+                        succes = SpawnNewLetter(1);
+                    }
+                    if ("TYFGV".Contains(lettera))
+                    {
+                        succes = SpawnNewLetter(2);
+                    }
+                    if ("UHJBN".Contains(lettera))
+                    {
+                        succes = SpawnNewLetter(3);
+                    }
+                    if ("IOPKLM".Contains(lettera))
+                    {
+                        succes = SpawnNewLetter(4);
+                    }
                 }
-                if ("ERDXC".Contains(lettera))
-                {
-                    succes = SpawnNewLetter(1);
-                }
-                if ("TYFGV".Contains(lettera))
-                {
-                    succes = SpawnNewLetter(2);
-                }
-                if ("UHJBN".Contains(lettera))
-                {
-                    succes = SpawnNewLetter(3);
-                }
-                if ("IOPKLM".Contains(lettera))
-                {
-                    succes = SpawnNewLetter(4);
-                }
+                succes = false;
+
+                i = 0;
             }
-            succes = false;
-
-            i = 0;
         }
     }
 
