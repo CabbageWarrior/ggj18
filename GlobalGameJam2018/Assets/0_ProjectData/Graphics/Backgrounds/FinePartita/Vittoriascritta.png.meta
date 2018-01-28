@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: f1df37a40a18e69439cfe3c2121024a4
-timeCreated: 1517144545
+guid: 7e56ba0c8e1d8e949b26f08935d5d2e7
+timeCreated: 1517145083
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: GOOD_JOB_MORTAL_0
-    21300002: GOOD_JOB_MORTAL_1
-    21300004: GOOD_JOB_MORTAL_2
-    21300006: GOOD_JOB_MORTAL_3
-    21300008: GOOD_JOB_MORTAL_4
-    21300010: GOOD_JOB_MORTAL_5
+    21300000: Vittoriascritta_0
+    21300002: Vittoriascritta_1
+    21300004: Vittoriascritta_2
+    21300006: Vittoriascritta_3
+    21300008: Vittoriascritta_4
+    21300010: Vittoriascritta_5
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -86,7 +86,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GOOD_JOB_MORTAL_0
+      name: Vittoriascritta_0
       rect:
         serializedVersion: 2
         x: 0
@@ -100,7 +100,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: GOOD_JOB_MORTAL_1
+      name: Vittoriascritta_1
       rect:
         serializedVersion: 2
         x: 300
@@ -114,7 +114,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: GOOD_JOB_MORTAL_2
+      name: Vittoriascritta_2
       rect:
         serializedVersion: 2
         x: 600
@@ -128,7 +128,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: GOOD_JOB_MORTAL_3
+      name: Vittoriascritta_3
       rect:
         serializedVersion: 2
         x: 0
@@ -142,7 +142,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: GOOD_JOB_MORTAL_4
+      name: Vittoriascritta_4
       rect:
         serializedVersion: 2
         x: 300
@@ -156,7 +156,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: GOOD_JOB_MORTAL_5
+      name: Vittoriascritta_5
       rect:
         serializedVersion: 2
         x: 600
