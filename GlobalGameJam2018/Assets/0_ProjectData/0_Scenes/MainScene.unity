@@ -775,7 +775,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4611837593318844, guid: 0e4ee09a62d8c7f4c8e4a3e5b88c6254, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: -2.03
       objectReference: {fileID: 0}
     - target: {fileID: 4611837593318844, guid: 0e4ee09a62d8c7f4c8e4a3e5b88c6254, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1579,7 +1579,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4611837593318844, guid: 0e4ee09a62d8c7f4c8e4a3e5b88c6254, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 4611837593318844, guid: 0e4ee09a62d8c7f4c8e4a3e5b88c6254, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1843,7 +1843,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4611837593318844, guid: 0e4ee09a62d8c7f4c8e4a3e5b88c6254, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 2
+      value: 2.57
       objectReference: {fileID: 0}
     - target: {fileID: 4611837593318844, guid: 0e4ee09a62d8c7f4c8e4a3e5b88c6254, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2950,7 +2950,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4611837593318844, guid: 0e4ee09a62d8c7f4c8e4a3e5b88c6254, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 4611837593318844, guid: 0e4ee09a62d8c7f4c8e4a3e5b88c6254, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3070,5 +3070,5 @@ MonoBehaviour:
   aumentoDiPunteggio: 10
   isPlaying: 1
   score: 0
-  minimoPunteggioVittoria: 0
-  milestones: 00000000140000001e0000002800000032000000
+  minimoPunteggioVittoria: 60
+  milestones: 000000000a000000140000001e00000028000000320000003c00000046000000500000005a00000064000000
