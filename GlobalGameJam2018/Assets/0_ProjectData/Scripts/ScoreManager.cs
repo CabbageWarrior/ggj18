@@ -79,7 +79,13 @@ public class ScoreManager : MonoBehaviour
 
         }
 
-
+        if (LM.isGameFinished)
+        {
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                SceneManager.LoadScene(0, LoadSceneMode.Single);
+            }
+        }
 
     }
 
