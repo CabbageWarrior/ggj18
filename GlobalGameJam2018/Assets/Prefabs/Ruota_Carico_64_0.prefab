@@ -159,7 +159,7 @@ MonoBehaviour:
   pressing: 0
   input_timer: {fileID: 1513174194822688}
   tokillachild: {fileID: 1513174194822688}
-  velocitaScomparitoria: 0.017
+  velocitaScomparitoria: 0.07
 --- !u!212 &212274654572580116
 SpriteRenderer:
   m_ObjectHideFlags: 1

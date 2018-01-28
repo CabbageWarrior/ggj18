@@ -2838,15 +2838,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4760873141263050, guid: afb17d8082257ed4cb9a925094c8582f, type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4760873141263050, guid: afb17d8082257ed4cb9a925094c8582f, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.0000020405278
       objectReference: {fileID: 0}
     - target: {fileID: 4760873141263050, guid: afb17d8082257ed4cb9a925094c8582f, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 4760873141263050, guid: afb17d8082257ed4cb9a925094c8582f, type: 2}
       propertyPath: m_LocalRotation.w
@@ -2876,6 +2876,10 @@ Prefab:
       propertyPath: targetTransform
       value: 
       objectReference: {fileID: 1430070062}
+    - target: {fileID: 4760873141263050, guid: afb17d8082257ed4cb9a925094c8582f, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: afb17d8082257ed4cb9a925094c8582f, type: 2}
   m_IsPrefabParent: 0
@@ -3022,6 +3026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minDelay: 0
   maxDelay: 0
+  impattoframerate: 40
   timer_cont: 60
   nota: {fileID: 1110575322823110, guid: f273c299e6f847f41b36aecce7256723, type: 2}
   spawnPoints:

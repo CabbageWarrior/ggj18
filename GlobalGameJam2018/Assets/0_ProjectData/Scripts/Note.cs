@@ -7,7 +7,7 @@ public class Note : MonoBehaviour
     public bool pressing;
     public GameObject input_timer;
     public GameObject tokillachild;
-    public float velocitaScomparitoria = 0.01f;
+    public float velocitaScomparitoria = 0.008f;
 
     float opacità_nota = 1f;
     float x = 1f;
