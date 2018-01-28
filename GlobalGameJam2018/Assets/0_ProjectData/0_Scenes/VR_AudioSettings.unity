@@ -697,7 +697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minDelay: 0
   maxDelay: 0
-  timer_cont: 90
+  timer_cont: 60
   nota: {fileID: 1110575322823110, guid: f273c299e6f847f41b36aecce7256723, type: 2}
   spawnPoints:
   - {fileID: 1281163934}
