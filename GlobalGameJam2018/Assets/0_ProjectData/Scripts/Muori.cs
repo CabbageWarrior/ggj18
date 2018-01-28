@@ -7,6 +7,7 @@ public class Muori : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         collision.GetComponent<Agent>().toglidalista();
-        Destroy(collision.gameObject);
+        //Destroy(collision.gameObject);
+        collision.gameObject.SetActive(false);
     }
 }

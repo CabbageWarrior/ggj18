@@ -21,7 +21,7 @@ namespace AI.Movement
             int totalAgents = 0;
             foreach (Agent agent in myAgent.agentispawnati)
             {
-                if (agent.gameObject == this.gameObject) continue; // Skips itself
+                if (agent.gameObject == this.gameObject && !agent.gameObject) continue; // Skips itself
 
                 if ((agent.transform.position - transform.position).sqrMagnitude <= radius * radius)
                 {
