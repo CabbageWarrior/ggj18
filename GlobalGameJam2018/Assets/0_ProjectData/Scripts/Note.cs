@@ -20,6 +20,7 @@ public class Note : MonoBehaviour
     SpriteRenderer sprite_timer;
     GameObject timer;
     Animator animation_reference;
+    ScoreManager StoVincendo;
     
     TextMesh text;
 
@@ -42,6 +43,7 @@ public class Note : MonoBehaviour
         animation_reference = GetComponent<Animator>();
 
         lyricsManager = FindObjectOfType<LyricsManager>();
+        StoVincendo = FindObjectOfType<ScoreManager>();
     }
 
     void Update()
@@ -76,6 +78,7 @@ public class Note : MonoBehaviour
             if (animation_reference.GetCurrentAnimatorStateInfo(0).IsName("orange_state"))
             {
                 // Più punteggio!!!
+                StoVincendo.AddPoint();
                 lyricsManager.SetNextValue(true);
             }
             else if (animation_reference.GetCurrentAnimatorStateInfo(0).IsName("green_state"))
@@ -93,8 +96,9 @@ public class Note : MonoBehaviour
         KeyCode tastoGiusto = (KeyCode)System.Enum.Parse(typeof(KeyCode), lettera);
 
         AudioCoro pippottinoCoro = new List<AudioCoro>(FindObjectsOfType<AudioCoro>()).Find(x => new List<KeyCode>(x.triggerButtons).Contains(tastoGiusto));
-
+        StoVincendo.SubtractPoints();
         lyricsManager.SetNextValue(false);
         pippottinoCoro.StartSfigatedAudio();
+
     }
 }

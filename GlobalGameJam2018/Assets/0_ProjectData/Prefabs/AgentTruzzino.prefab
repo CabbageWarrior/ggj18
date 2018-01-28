@@ -205,9 +205,10 @@ MonoBehaviour:
   currentState: 0
   streetCenter: {fileID: 0}
   defaultNormalTarget: {fileID: 0}
-  SeekAmmount: 1
-  CohesionAmmount: 1
-  SeparationAmmount: 1
+  meNeVadoDaStoPostoDiMerda: {fileID: 0}
+  SeekAmmount: 0.3
+  CohesionAmmount: 0.9
+  SeparationAmmount: 0.5
 --- !u!114 &114800616523495148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -233,7 +234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weight: 0.16
-  radius: 0.2
+  radius: 0.3
 --- !u!212 &212658790755961118
 SpriteRenderer:
   m_ObjectHideFlags: 1

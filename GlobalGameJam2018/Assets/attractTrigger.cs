@@ -18,10 +18,8 @@ public class attractTrigger : MonoBehaviour {
         }
         if((int)collision.GetComponent<AgentStateMachine>().currentState == 3)
         {
-            collision.GetComponent<AgentStateMachine>().currentState = State.NORMAL;
-            collision.GetComponent<Agent>().seek.targetTransform = collision.GetComponent<AgentStateMachine>().defaultNormalTarget;
+            collision.GetComponent<Agent>().seek.targetTransform = collision.GetComponent<AgentStateMachine>().meNeVadoDaStoPostoDiMerda;
             collision.GetComponent<Agent>().ChangeDirection();
-
 
         }
     }

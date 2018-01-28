@@ -44,8 +44,8 @@ namespace AI.Movement
             seek = GetComponent<SeekBehaviour>();
             cohesion = GetComponent<CohesionBehaviour>();
             pippottinoRenderer = pippottino.GetComponent<SpriteRenderer>();
-            ChangeDirection();
             myAnimator = GetComponentInChildren<Animator>();
+            //ChangeDirection();
 
         }
 

@@ -60,7 +60,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1161184362531184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.655, y: -2.745, z: 0}
+  m_LocalPosition: {x: 5.52, y: -2.69, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4697788317751760}
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weight: 0.16
-  radius: 0.2
+  radius: 0.3
 --- !u!114 &114131471087805280
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -185,9 +185,10 @@ MonoBehaviour:
   currentState: 0
   streetCenter: {fileID: 0}
   defaultNormalTarget: {fileID: 0}
-  SeekAmmount: 1
-  CohesionAmmount: 1
-  SeparationAmmount: 1
+  meNeVadoDaStoPostoDiMerda: {fileID: 0}
+  SeekAmmount: 0.3
+  CohesionAmmount: 0.9
+  SeparationAmmount: 0.5
 --- !u!114 &114299484665640172
 MonoBehaviour:
   m_ObjectHideFlags: 1

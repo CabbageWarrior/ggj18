@@ -9,9 +9,12 @@ public class TargetSwitch : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        collision.GetComponent<SeekBehaviour>().targetTransform = otherTarget;
-        collision.GetComponent<Agent>().ChangeDirection();
+        if(collision.GetComponent<AgentStateMachine>().currentState == State.NORMAL)
+        {
+            collision.GetComponent<SeekBehaviour>().targetTransform = otherTarget;
+            collision.GetComponent<Agent>().ChangeDirection();
+
+        }
 
     }
 

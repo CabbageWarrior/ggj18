@@ -11,9 +11,10 @@ public class AgentStateMachine : MonoBehaviour
     public State currentState;
 
     public Transform streetCenter;
+    public Transform defaultNormalTarget;
+    public Transform meNeVadoDaStoPostoDiMerda;
    
 
-    public Transform defaultNormalTarget;
     private float defaultSeek;
     private float defaultCohesion;
     private float defaultSeparation;
@@ -38,25 +39,10 @@ public class AgentStateMachine : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            CheckState(State.NORMAL);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            CheckState(State.ATTRACTED);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            CheckState(State.POGGING);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            CheckState(State.SCAZZED);
-        }
+       
     }
 
-    void CheckState(State newState)
+    public void CheckState(State newState)
     {
         if (newState == 0 && currentState != State.NORMAL)
         {
@@ -78,6 +64,7 @@ public class AgentStateMachine : MonoBehaviour
             myAgent.myAnimator.SetBool("Pogo", false);
             myAgent.myAnimator.SetBool("Scazzata", false);
             myAgent.seek.targetTransform = streetCenter;
+            myAgent.ChangeDirection();
             myAgent.maximumLinearVelocity = myAgent.maximumLinearVelocityAttracted;
             
 
@@ -89,7 +76,7 @@ public class AgentStateMachine : MonoBehaviour
             myAgent.myAnimator.SetBool("Pogo", true);
             myAgent.myAnimator.SetBool("Scazzata", false);
             myAgent.maximumLinearVelocity = 0.1f;
-            myAgent.seek.weight = 0.0f;
+            myAgent.seek.weight = SeekAmmount;
             myAgent.cohesion.weight = CohesionAmmount;
             myAgent.separation.weight = SeparationAmmount;
         }

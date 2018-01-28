@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 7061587fbef765c40a0ea32040e58415
-timeCreated: 1517059662
+guid: a544b16ede3668241b2a57a3a0c22962
+timeCreated: 1517124670
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: truzzino_front_walk_0
-    21300002: truzzino_front_walk_1
-    21300004: truzzino_front_walk_2
-    21300006: truzzino_front_walk_3
+    21300000: Porta_Animazione_0
+    21300002: Porta_Animazione_1
+    21300004: Porta_Animazione_2
+    21300006: Porta_Animazione_3
+    21300008: Porta_Animazione_4
+    21300010: Porta_Animazione_5
+    21300012: Porta_Animazione_6
+    21300014: Porta_Animazione_7
+    21300016: Porta_Animazione_8
+    21300018: Porta_Animazione_9
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -84,13 +90,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: truzzino_front_walk_0
+      name: Porta_Animazione_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 64
-        height: 64
+        y: 1470
+        width: 1024
+        height: 578
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -98,13 +104,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: truzzino_front_walk_1
+      name: Porta_Animazione_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
+        x: 1024
+        y: 1470
+        width: 1024
+        height: 578
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,13 +118,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: truzzino_front_walk_2
+      name: Porta_Animazione_2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 1470
+        width: 1024
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Porta_Animazione_3
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 1470
+        width: 1024
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Porta_Animazione_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 64
-        height: 64
+        y: 892
+        width: 1024
+        height: 578
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,13 +160,69 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: truzzino_front_walk_3
+      name: Porta_Animazione_5
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 64
-        height: 64
+        x: 1024
+        y: 892
+        width: 1024
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Porta_Animazione_6
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 892
+        width: 1024
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Porta_Animazione_7
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 892
+        width: 1024
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Porta_Animazione_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 314
+        width: 1024
+        height: 578
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Porta_Animazione_9
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 314
+        width: 1024
+        height: 578
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
