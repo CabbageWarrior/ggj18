@@ -5,6 +5,7 @@ namespace AI.Movement
     public class CohesionBehaviour : SteeringBehaviour
     {
         public float radius = 1;
+        private Agent agentone;
 
         public override SteeringOutput GetSteering()
         {
@@ -13,7 +14,7 @@ namespace AI.Movement
             // Get all agents inside the circle
             Vector2 baricenter = Vector2.zero;
             int totalAgents = 0;
-            foreach (Agent agent in FindObjectsOfType<Agent>())
+            foreach (Agent agent in agentone.agentispawnati)
             {
                 if (agent.gameObject == this.gameObject) continue; // Skips itself
 

@@ -33,6 +33,7 @@ namespace AI.Movement
         [HideInInspector]public SeparationBehaviour separation;
         [HideInInspector]public CohesionBehaviour cohesion;
         private SteeringBehaviour[] steeringBehaviours;
+        public List<Agent> agentispawnati;
 
         [HideInInspector]public Animator myAnimator;
 
@@ -45,8 +46,14 @@ namespace AI.Movement
             cohesion = GetComponent<CohesionBehaviour>();
             pippottinoRenderer = pippottino.GetComponent<SpriteRenderer>();
             myAnimator = GetComponentInChildren<Animator>();
-            //ChangeDirection();
+            StartCoroutine(resetDirection());
 
+        }
+
+        private void Start()
+        {
+            agentispawnati = new List<Agent>(FindObjectsOfType<Agent>());
+            
         }
 
         void Update()
@@ -136,6 +143,22 @@ namespace AI.Movement
                 pippottinoRenderer.flipX = false;
                 transform.right = -(transform.position - seek.targetTransform.position).normalized;
             }
+        }
+
+        IEnumerator resetDirection()
+        {
+            bool continueLoop = true;
+
+            while(continueLoop)
+            {
+                yield return new WaitForSeconds(UnityEngine.Random.Range(2f,10f));
+                ChangeDirection();
+            }
+        }
+
+        public void updateList()
+        {
+            agentispawnati.Add(this);
         }
     }
 }

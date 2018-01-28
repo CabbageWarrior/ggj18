@@ -94,6 +94,7 @@ public class ScoreManager : MonoBehaviour
         pippottinoCultista.GetComponent<AgentStateMachine>().streetCenter = sitysenter;
         pippottinoCultista.GetComponent<AgentStateMachine>().defaultNormalTarget = defaultNormalTarget;
         pippottinoCultista.GetComponent<AgentStateMachine>().meNeVadoDaStoPostoDiMerda = meNeVadoTarget;
+        pippottinoCultista.GetComponent<Agent>().updateList();
         yield return null;
         pippottinoCultista.GetComponent<AgentStateMachine>().CheckState(State.ATTRACTED);
 
