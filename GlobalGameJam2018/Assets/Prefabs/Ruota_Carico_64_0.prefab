@@ -159,6 +159,7 @@ MonoBehaviour:
   pressing: 0
   input_timer: {fileID: 1513174194822688}
   tokillachild: {fileID: 1513174194822688}
+  velocitaScomparitoria: 0.017
 --- !u!212 &212274654572580116
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -193,7 +194,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a00ff9ceda8181d40985037ec28b9013, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b2d17f5ebe458ca498f7f7eecf1fdaed, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
