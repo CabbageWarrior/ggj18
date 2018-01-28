@@ -1,17 +1,9 @@
 fileFormatVersion: 2
-guid: 3eb17aca23bd14246a9ce6ed9cf8b5a8
-timeCreated: 1517136046
+guid: d3f8b8a994667e44faa840966c6bbb9e
+timeCreated: 1517135870
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: "Coro_Idle_Shape_quel_cazzo_che_\xE8_0"
-    21300002: "Coro_Idle_Shape_quel_cazzo_che_\xE8_1"
-    21300004: "Coro_Idle_Shape_quel_cazzo_che_\xE8_2"
-    21300006: "Coro_Idle_Shape_quel_cazzo_che_\xE8_3"
-    21300008: Coro_0
-    21300010: Coro_1
-    21300012: Coro_2
-    21300014: Coro_3
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -48,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -84,65 +76,29 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: Coro_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 578
-        width: 1024
-        height: 578
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Coro_1
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 578
-        width: 1024
-        height: 578
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Coro_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1024
-        height: 578
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: Coro_3
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 1024
-        height: 578
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
+    sprites: []
     outline: []
     physicsShape: []
   spritePackingTag: 
