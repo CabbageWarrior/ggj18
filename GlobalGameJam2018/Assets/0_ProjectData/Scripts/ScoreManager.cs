@@ -36,11 +36,7 @@ public class ScoreManager : MonoBehaviour
 
         if (isPlaying)
         {
-            if (Input.GetKeyDown(KeyCode.G))
-            {
-                SpawnNewBellissimPippottino();
-            }
-
+           
             if (milestoneReached < milestones.Length - 1 && score >= milestones[milestoneReached + 1])
             {
                 milestoneReached++;
